@@ -1,0 +1,133 @@
+* {
+    font-family: Poppins, sans-serif;
+    color: #121212;
+    background-color: #ffffff;
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: #777777;
+}
+
+#navbar ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+.header {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.nav {
+    border-bottom: 5px solid #383838;
+    
+}
+
+.nav-header {
+    padding: 10px;
+    background-color: #e8e8e8;
+}
+
+.no-lists {
+    list-style-type: none;
+}
+
+.nav-list {
+    border-bottom: 2px solid #00161666;
+    padding: 10px;
+}
+
+.nav-list:last-of-type {
+    border-bottom: 5px solid #383838;
+}
+
+.nav-link {
+    display: flex;
+    text-decoration: none;
+    color: #121212;
+    font-size: 25px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+.main-section {
+    margin-left: 310px;
+}
+
+.section-header {
+    margin: 60px 10px 10px 10px;
+}
+
+p {
+    text-align: justify;
+    font-size: 18px;
+    margin: 20px  20px 20px 30px;
+}
+
+.timeline {
+    font-weight: bold;
+}
+
+.timeline::after {content: " - ";}
+
+.lists {
+    list-style: disc;
+}
+
+.no-indent {
+    margin-left: 0;
+}
+
+.list-title {
+    margin-bottom: -10px;
+}
+
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    background-color: #f7f7f7;
+}
+
+@media (max-width: 815px) {
+    #navbar {
+        border: 1px solid;
+        height: 207px;
+        background-color: white;
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        border: none;
+        z-index: 1;
+        border-bottom: 2px solid;
+    }
+
+    .main-section {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 270px;
+    }
+}
